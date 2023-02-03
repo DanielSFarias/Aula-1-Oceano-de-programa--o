@@ -11,7 +11,7 @@ function colocarNaTela(dados){
 
     document.querySelector(".descricao").innerHTML = dados.weather[0].description
 
-    document.querySelector(".umidade").innerHTML = dados.main.humidity + "%"
+    document.querySelector(".umidade").innerHTML = "umidade " + dados.main.humidity + "%" 
 
     document.querySelector(".icone").src = "https://openweathermap.org/img/wn/" + dados.weather[0].icon + ".png"
 
